@@ -1,0 +1,172 @@
+.modal-close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-background);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close-icon {
+  fill: $color-2;
+}
+
+.modal-close-button:hover .modal-close-icon {
+  fill: $color-3;
+  cursor: pointer;
+}
+
+.form {
+  display: block;
+  flex-direction: column;
+}
+
+.form-title {
+  text-align: center;
+  color: $color-2;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+}
+
+.form-field {
+  position: relative;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field--agreement {
+  margin-top: 20px;
+}
+
+.form-input,
+.form-textarea {
+  margin-top: 4px;
+  border-radius: 4px;
+  color: $color-5;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border $transition-variable;
+}
+
+.form-input {
+  height: 40px;
+  padding-left: 42px;
+}
+
+.form-textarea {
+  resize: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.form-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* .form-input:hover, */
+/* .form-textarea:hover, */
+.form-input:focus,
+.form-textarea:focus {
+  border: 1px solid $color-3;
+  cursor: pointer;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: none;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $color-5;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.agreement-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 38px;
+}
+
+.agreement-checkbox--hidden {
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agreement-checkbox--svg {
+  position: absolute;
+  left: 14px;
+  top: 5px;
+
+  border: 1px solid $color-2;
+  border-radius: 2px;
+  fill: $color-6;
+  transition: border-color $transition-variable, background-color $transition-variable;
+}
+
+.agreement-checkbox--hidden:checked + .agreement-checkbox--svg {
+  background-color: $color-3;
+  border-color: $color-3;
+}
+
+.agreement-link {
+  color: $color-3;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.form-button--submit {
+  margin-top: 5px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $color-3;
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $color-6;
+
+  cursor: pointer;
+  transition: background-color $transition-variable;
+}
+
+.form-button--submit:hover,
+.form-button--submit:focus {
+  background-color: $color-1;
+}

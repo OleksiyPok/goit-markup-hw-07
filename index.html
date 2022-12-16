@@ -18,44 +18,42 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
-        <div class="header-logo">
-          <a href="./index.html" class="logo logo-link--header">
-            Web<span class="logo-span--header">Studio</span>
-          </a>
-        </div>
-        <nav class="header-nav">
-          <ul class="nav-menu">
-            <li class="nav-item nav-item--current">
-              <a href="./index.html" class="nav-link">Studio</a>
+      <div class="container header__container">
+        <a href="./index.html" class="logo logo__link header__logo">
+          Web<span class="logo__span logo__span--dark">Studio</span>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li class="navigation__item navigation__item--current">
+              <a href="./index.html" class="navigation__link">Studio</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link">Portfolio</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contacts</a>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <div class="header-contacts">
-          <ul class="contacts-list--header">
-            <li class="contacts-item--header">
+        <div class="contacts header__contacts">
+          <ul class="contacts__list--header">
+            <li class="contacts__item">
               <a
                 href="mailto:info@devstudio.com"
-                class="contact-link contact-link--header contact-mail--header"
+                class="contact__link contact__link--header contact__mail--header"
               >
-                <svg class="contact-icon" width="16" height="12">
+                <svg class="contact__icon" width="16" height="12">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="contacts-item--header">
+            <li class="contacts__item">
               <a
                 href="tel:+12127724150"
-                class="contact-link contact-link--header contact-tel--header"
+                class="contact__link contact__link--header contact__tel--header"
               >
-                <svg class="contact-icon" width="16" height="16">
+                <svg class="contact__icon" width="16" height="16">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +1 212-772-4150
@@ -72,7 +70,7 @@
       <section class="section hero-section">
         <div class="hero-container">
           <div class="hero-group">
-            <h1 class="section-title hero-title">Effective solutions for your business</h1>
+            <h1 class="hero-title">Effective solutions for your business</h1>
             <button type="button" class="hero-button" data-modal-open>Request our service</button>
           </div>
         </div>
@@ -81,7 +79,7 @@
       <!-- Section Features -->
       <section class="section features-section">
         <div class="container features-container">
-          <h2 class="section-title features-title display-none">Features</h2>
+          <h2 class="section__title features-title display-none">Features</h2>
           <ul class="features-list">
             <li class="features-item">
               <div class="features-icon-bg">
@@ -89,8 +87,8 @@
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle features-subtitle">Attention to details</h3>
-              <p class="section-text features-text">
+              <h3 class="section__subtitle features-subtitle">Attention to details</h3>
+              <p class="section__text features-text">
                 We go into all the details and processes of your business to develop a customized
                 solution.
               </p>
@@ -101,8 +99,8 @@
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle features-subtitle">Punctuality</h3>
-              <p class="section-text features-text">
+              <h3 class="section__subtitle features-subtitle">Punctuality</h3>
+              <p class="section__text features-text">
                 With us, you can feel safe and secure. An important principle of the company:
                 respect your time and respect the agreed deadlines.
               </p>
@@ -113,8 +111,8 @@
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle features-subtitle">Planning</h3>
-              <p class="section-text features-text">
+              <h3 class="section__subtitle features-subtitle">Planning</h3>
+              <p class="section__text features-text">
                 You will be able to observe and participate in every phase of solution development
                 and implementation.
               </p>
@@ -125,8 +123,8 @@
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle features-subtitle">Modern technologies</h3>
-              <p class="section-text features-text">
+              <h3 class="section__subtitle features-subtitle">Modern technologies</h3>
+              <p class="section__text features-text">
                 We use innovative tools to solve assigned tasks. It's time to simplify work
                 processes.
               </p>
@@ -138,7 +136,7 @@
       <!-- Section About -->
       <section class="section about-section">
         <div class="container about-container">
-          <h2 class="section-title about-title">What we do</h2>
+          <h2 class="section__title about-title">What we do</h2>
           <ul class="about-list">
             <li class="about-item">
               <div class="about-imagewrap">
@@ -171,213 +169,244 @@
       </section>
 
       <!-- Section Our Team -->
-      <section class="section team-section">
-        <div class="container team-container">
-          <h2 class="section-title team-title">Our Team</h2>
-          <ul class="team-list">
-            <li class="team-item">
-              <img src="./images/IgorDemiyanenko.jpg" alt="Christopher Walker" width="270" />
-              <h3 class="section-subtitle team-subtitle">Christopher Walker</h3>
-              <p class="section-text team-text">Product Designer</p>
-              <ul class="sociallink-list sociallink-list-team">
-                <li class="sociallink-item margin-res">
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item margin-res">
-                  <a
-                    href="https://www.twitter.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item margin-res">
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item margin-res">
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+      <section class="section team__section">
+        <div class="container team__container">
+          <h2 class="section__title team__title">Our Team</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <img
+                class="team__img"
+                src="./images/IgorDemiyanenko.jpg"
+                alt="Christopher Walker"
+                width="270"
+              />
+              <div class="team__meta">
+                <h3 class="section__subtitle team__subtitle">Christopher Walker</h3>
+                <p class="section__text team__text">Product Designer</p>
+              </div>
+              <div class="sociallink team__sociallink">
+                <ul class="sociallink__list">
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="team-item">
-              <img src="./images/OlgaRepina.jpg" alt="Kylie Evans" width="270" />
-              <h3 class="section-subtitle team-subtitle">Kylie Evans</h3>
-              <p class="section-text team-text">Frontend Developer</p>
-              <ul class="sociallink-list sociallink-list-team">
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.twitter.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <li class="team__item">
+              <img class="team__img" src="./images/OlgaRepina.jpg" alt="Kylie Evans" width="270" />
+              <div class="team__meta">
+                <h3 class="section__subtitle team__subtitle">Kylie Evans</h3>
+                <p class="section__text team__text">Frontend Developer</p>
+              </div>
+              <div class="sociallink team__sociallink">
+                <ul class="sociallink__list">
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="team-item">
-              <img src="./images/MykolaTarasov.jpg" alt="Ryan Harris" width="270" />
-              <h3 class="section-subtitle team-subtitle">Ryan Harris</h3>
-              <p class="section-text team-text">Marketing</p>
-              <ul class="sociallink-list sociallink-list-team">
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.twitter.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <li class="team__item">
+              <img
+                class="team__img"
+                src="./images/MykolaTarasov.jpg"
+                alt="Ryan Harris"
+                width="270"
+              />
+              <div class="team__meta">
+                <h3 class="section__subtitle team__subtitle">Ryan Harris</h3>
+                <p class="section__text team__text">Marketing</p>
+              </div>
+              <div class="sociallink team__sociallink">
+                <ul class="sociallink__list">
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="team-item">
-              <img src="./images/MikhayloYermakov.jpg" alt="Tyler Moore" width="270" />
-              <h3 class="section-subtitle team-subtitle">Tyler Moore</h3>
-              <p class="section-text team-text">UI Designer</p>
-              <ul class="sociallink-list sociallink-list-team">
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.twitter.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="sociallink-item">
-                  <a
-                    href="https://www.linkedin.com/"
-                    target="_blank"
-                    class="sociallink-link sociallink-link-team"
-                  >
-                    <svg class="sociallink-icon sociallink-icon-team" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <li class="team__item">
+              <img
+                class="item__img team__img"
+                src="./images/MikhayloYermakov.jpg"
+                alt="Tyler Moore"
+                width="270"
+              />
+              <div class="team__meta">
+                <h3 class="section__subtitle team__subtitle">Tyler Moore</h3>
+                <p class="section__text team__text">UI Designer</p>
+              </div>
+              <div class="sociallink team__sociallink">
+                <ul class="sociallink__list">
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.twitter.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="sociallink__item sociallink__item--team">
+                    <a
+                      class="sociallink__link sociallink__link--team"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg class="sociallink__icon sociallink__icon--team" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -386,7 +415,7 @@
       <!-- Section Customers -->
       <section class="section customers-section">
         <div class="container customers-container">
-          <h2 class="section-title customers-title">Regular Customers</h2>
+          <h2 class="section__title customers-title">Regular Customers</h2>
           <ul class="customers-list">
             <li class="customers-item">
               <a href="https://www.google.com/" target="_blank" class="customers-link">
@@ -437,34 +466,34 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-first-column">
-          <a href="./index.html" class="logo logo-link--footer">
-            Web<span class="logo-span--footer">Studio</span>
+      <div class="container footer__container">
+        <div class="footer__first-column">
+          <a class="logo footer__logo" href="./index.html">
+            Web<span class="logo__span logo__span--light">Studio</span>
           </a>
-          <address class="footer-contacts">
-            <ul class="contacts-list--footer">
-              <li class="contacts-item--footer">
+          <address class="footer__contacts">
+            <ul class="contacts__list--footer">
+              <li class="contacts__item--footer">
                 <a
+                  class="contact__link contact__link--footer contact__location--footer"
                   href="https://goo.gl/maps/UcGMmtQmXpVpu3WY8"
                   target="_blank"
-                  class="contact-link contact-link--footer contact-location--footer"
                 >
                   695 Park Ave, New York, NY 10065, United States
                 </a>
               </li>
-              <li class="contacts-item--footer">
+              <li class="contacts__item--footer">
                 <a
+                  class="contact__link contact__link--footer contact__mail--footer"
                   href="mailto:info@devstudio.com"
-                  class="contact-link contact-link--footer contact-mail--footer"
                 >
                   info@devstudio.com
                 </a>
               </li>
-              <li class="contacts-item--footer">
+              <li class="contacts__item--footer">
                 <a
+                  class="contact__link contact__link--footer contact__tel--footer"
                   href="tel:+12127724150"
-                  class="contact-link contact-link--footer contact-tel--footer"
                 >
                   +1 212-772-4150
                 </a>
@@ -472,50 +501,50 @@
             </ul>
           </address>
         </div>
-        <div class="footer-second-column">
-          <div class="sociallink sociallink--footer">
-            <p class="sociallink-text--footer">Find us on</p>
-            <ul class="sociallink-list sociallink-list--footer">
-              <li class="sociallink-item sociallink-item--footer">
+        <div class="footer__second-column">
+          <p class="sociallink__text footer__text">Find us on</p>
+          <div class="sociallink footer__sociallink">
+            <ul class="sociallink__list">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.instagram.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="sociallink-item sociallink-item--footer">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.twitter.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="sociallink-item sociallink-item--footer">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="sociallink-item sociallink-item--footer">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.linkedin.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -523,20 +552,20 @@
             </ul>
           </div>
         </div>
-        <div class="footer-third-column">
-          <div class="subscribe" for="subscribe-input">
-            <label class="subscribe-text">Subscribe to the newsletter</label>
-            <div class="subscribe-form">
+        <div class="footer__third-column">
+          <div class="subscribe" for="subscrib__input">
+            <p class="subscribe__text footer__text">Subscribe to the newsletter</p>
+            <div class="subscribe__form">
               <input
+                class="subscribe__input"
                 type="email"
                 name="E-mail"
                 placeholder="E-mail"
-                class="subscribe-input"
-                id="subscribe-input"
+                id="subscribe__input"
               />
-              <button type="submit" class="subscribe-button">
+              <button type="submit" class="subscribe__button">
                 Subscribe
-                <svg class="subscribe-icon" width="24" height="24">
+                <svg class="subscribe__icon" width="24" height="24">
                   <use href="./images/icons.svg#telegram"></use>
                 </svg>
               </button>

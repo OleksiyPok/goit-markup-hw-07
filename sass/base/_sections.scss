@@ -1,0 +1,28 @@
+// .features-section,
+// .about-section,
+// .team__section,
+// .customers-section
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title,
+.section__subtitle,
+.section__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section__title {
+  margin-bottom: 50px;
+}
+
+.section__title,
+.section__subtitle {
+  color: $color-2;
+}
+
+.section__text {
+  color: $color-5;
+}

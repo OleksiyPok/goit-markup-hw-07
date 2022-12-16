@@ -13,50 +13,49 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/portfolio.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header-container">
-        <div class="header-logo">
-          <a href="./index.html" class="logo logo-link--header link-res">
-            Web<span class="logo-span--header">Studio</span>
-          </a>
-        </div>
-        <nav class="header-nav">
-          <ul class="nav-menu list-res">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link link-res">Studio</a>
+      <div class="container header__container">
+        <a href="./index.html" class="logo logo__link header__logo">
+          Web<span class="logo__span logo__span--dark">Studio</span>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html"> Studio </a>
             </li>
-            <li class="nav-item nav-item--current">
-              <a href="./portfolio.html" class="nav-link link-res">Portfolio</a>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__item--current" href="./portfolio.html">
+                Portfolio
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-res">Contacts</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
-        <div class="header-contacts">
-          <ul class="contacts-list--header list-res">
-            <li class="contacts-item--header">
+        <div class="contacts header__contacts">
+          <ul class="contacts__list--header">
+            <li class="contacts__item">
               <a
                 href="mailto:info@devstudio.com"
-                class="contact-link contact-link--header contact-mail--header link-res"
+                class="contact__link contact__link--header contact__mail--header"
               >
-                <svg class="contact-icon" width="16" height="12">
+                <svg class="contact__icon" width="16" height="12">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="contacts-item--header">
+            <li class="contacts__item">
               <a
                 href="tel:+12127724150"
-                class="contact-link contact-link--header contact-tel--header link-res"
+                class="contact__link contact__link--header contact__tel--header"
               >
-                <svg class="contact-icon" width="16" height="16">
+                <svg class="contact__icon" width="16" height="16">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +1 212-772-4150
@@ -73,7 +72,7 @@
       <section class="section section-portfolio">
         <div class="container portfolio-container">
           <h1 class="title display-none">Portfolio</h1>
-          <h2 class="section-title display-none">Portfolio</h2>
+          <h2 class="section__title display-none">Portfolio</h2>
           <ul class="list portfolio-filter-list list-res">
             <li class="portfolio-filter-item">
               <button type="button" class="portfolio-button">All</button>
@@ -303,34 +302,34 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-first-column">
-          <a href="./index.html" class="logo logo-link--footer">
-            Web<span class="logo-span--footer">Studio</span>
+      <div class="container footer__container">
+        <div class="footer__first-column">
+          <a class="logo footer__logo" href="./index.html">
+            Web<span class="logo__span logo__span--light">Studio</span>
           </a>
-          <address class="footer-contacts">
-            <ul class="contacts-list--footer">
-              <li class="contacts-item--footer">
+          <address class="footer__contacts">
+            <ul class="contacts__list--footer">
+              <li class="contacts__item--footer">
                 <a
+                  class="contact__link contact__link--footer contact__location--footer"
                   href="https://goo.gl/maps/UcGMmtQmXpVpu3WY8"
                   target="_blank"
-                  class="contact-link contact-link--footer contact-location--footer"
                 >
                   695 Park Ave, New York, NY 10065, United States
                 </a>
               </li>
-              <li class="contacts-item--footer">
+              <li class="contacts__item--footer">
                 <a
+                  class="contact__link contact__link--footer contact__mail--footer"
                   href="mailto:info@devstudio.com"
-                  class="contact-link contact-link--footer contact-mail--footer"
                 >
                   info@devstudio.com
                 </a>
               </li>
-              <li class="contacts-item--footer">
+              <li class="contacts__item--footer">
                 <a
+                  class="contact__link contact__link--footer contact__tel--footer"
                   href="tel:+12127724150"
-                  class="contact-link contact-link--footer contact-tel--footer"
                 >
                   +1 212-772-4150
                 </a>
@@ -338,50 +337,50 @@
             </ul>
           </address>
         </div>
-        <div class="footer-second-column">
-          <div class="sociallink sociallink--footer">
-            <p class="sociallink-text--footer">Find us on</p>
-            <ul class="sociallink-list sociallink-list--footer">
-              <li class="sociallink-item sociallink-item--footer">
+        <div class="footer__second-column">
+          <p class="sociallink__text footer__text">Find us on</p>
+          <div class="sociallink footer__sociallink">
+            <ul class="sociallink__list">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.instagram.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="sociallink-item sociallink-item--footer">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.twitter.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="sociallink-item sociallink-item--footer">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.facebook.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="sociallink-item sociallink-item--footer">
+              <li class="sociallink__item sociallink__item--footer">
                 <a
+                  class="sociallink__link sociallink__link--footer"
                   href="https://www.linkedin.com/"
                   target="_blank"
-                  class="sociallink-link sociallink-link--footer"
                 >
-                  <svg class="sociallink-icon sociallink-icon--footer" width="20" height="20">
+                  <svg class="sociallink__icon sociallink__icon--footer" width="20" height="20">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -389,20 +388,20 @@
             </ul>
           </div>
         </div>
-        <div class="footer-third-column">
-          <div class="subscribe" for="subscribe-input">
-            <label class="subscribe-text">Subscribe to the newsletter</label>
-            <div class="subscribe-form">
+        <div class="footer__third-column">
+          <div class="subscribe" for="subscrib__input">
+            <p class="subscribe__text footer__text">Subscribe to the newsletter</p>
+            <div class="subscribe__form">
               <input
+                class="subscribe__input"
                 type="email"
                 name="E-mail"
                 placeholder="E-mail"
-                class="subscribe-input"
-                id="subscribe-input"
+                id="subscribe__input"
               />
-              <button type="submit" class="subscribe-button">
+              <button type="submit" class="subscribe__button">
                 Subscribe
-                <svg class="subscribe-icon" width="24" height="24">
+                <svg class="subscribe__icon" width="24" height="24">
                   <use href="./images/icons.svg#telegram"></use>
                 </svg>
               </button>

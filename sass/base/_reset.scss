@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  pading: 0;
+}
+
+a.text:active,
+a.text:hover,
+a.text,
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.display-none {
+  display: none;
+}
+
+.padding-res {
+  padding: 0;
+}

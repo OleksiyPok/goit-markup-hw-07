@@ -1,0 +1,28 @@
+.features-section {
+  padding-bottom: 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-icon-bg {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  background-color: $color-11;
+}
+
+.features-subtitle {
+  margin-top: 30px;
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  margin-top: 10px;
+}
