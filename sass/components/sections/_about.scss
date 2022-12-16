@@ -1,10 +1,10 @@
-.about-imagewrap {
+.about__imagewrap {
   position: relative;
   display: flex;
   align-items: flex-end;
 }
 
-.about-description {
+.about__description {
   position: absolute;
   width: 100%;
   margin: 0 0 0 0;
@@ -18,7 +18,7 @@
   color: $color-6;
 }
 
-.about-list {
+.about__list {
   display: flex;
   gap: 30px;
   margin-top: 50px;
