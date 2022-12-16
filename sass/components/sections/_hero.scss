@@ -1,4 +1,4 @@
-.hero-container {
+.hero__container {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -6,7 +6,7 @@
   padding-right: 15px;
 }
 
-.hero-section {
+.hero__section {
   height: 600px;
   padding-top: 200px;
   background-color: $color-8;
@@ -17,14 +17,14 @@
   background-position: center;
 }
 
-.hero-group {
+.hero__group {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   color: $color-6;
   font-weight: 900;
   font-size: 44px;
@@ -34,7 +34,7 @@
   margin-bottom: 30px;
 }
 
-.hero-button {
+.hero__button {
   min-height: 50px;
   min-width: 200px;
   border: 1px solid transparent;
