@@ -1,10 +1,10 @@
-.customers-list {
+.customers__list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
 }
 
-.customers-link {
+.customers__link {
   display: flex;
   width: 168px;
   height: 90px;
@@ -17,8 +17,8 @@
   transition: border-color $transition-variable, fill $transition-variable;
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.customers__link:hover,
+.customers__link:focus {
   border-color: $color-3;
   fill: $color-3;
 }
