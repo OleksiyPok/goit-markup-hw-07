@@ -1,0 +1,15 @@
+.set__list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.set__item {
+  transition: box-shadow $transition-variable;
+}
+
+.set__item:hover,
+.set__item:focus {
+  box-shadow: $portfolio-card-shadow;
+}
