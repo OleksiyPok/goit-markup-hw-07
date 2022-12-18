@@ -1,15 +1,15 @@
-.set__list {
+.projects__list {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.set__item {
+.projects__item {
   transition: box-shadow $transition-variable;
 }
 
-.set__item:hover,
-.set__item:focus {
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: $portfolio-card-shadow;
 }
