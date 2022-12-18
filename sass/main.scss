@@ -4,21 +4,21 @@
 @import './base/container';
 @import './base/sections';
 
-@import './components/sections/header';
-@import './components/sections/hero';
-@import './components/sections/features';
-@import './components/sections/about';
-@import './components/sections/team';
-@import './components/sections/customers';
-@import './components/sections/footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/customers';
+@import './layout/footer';
 
-@import './components/blocks/logo';
-@import './components/blocks/navigation';
-@import './components/blocks/contacts';
-@import './components/blocks/sociallink';
-@import './components/blocks/subscribe';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/sociallink';
+@import './components/subscribe';
 
-@import './components/blocks/callbackForm';
+@import './components/callbackForm';
 
 .modal-window {
   position: absolute;

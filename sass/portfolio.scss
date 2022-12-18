@@ -4,14 +4,14 @@
 @import './base/container';
 @import './base/sections';
 
-@import './components/sections/header';
-@import './components/blocks/portfolio-filters';
-@import './components/blocks/portfolio-set';
-@import './components/blocks/portfolio-card';
-@import './components/sections/footer';
+@import './layout/header';
+@import './components/portfolio-filters';
+@import './components/portfolio-projects';
+@import './components/portfolio-card';
+@import './layout/footer';
 
-@import './components/blocks/logo';
-@import './components/blocks/navigation';
-@import './components/blocks/contacts';
-@import './components/blocks/sociallink';
-@import './components/blocks/subscribe';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/sociallink';
+@import './components/subscribe';
