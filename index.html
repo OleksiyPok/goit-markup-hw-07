@@ -577,62 +577,61 @@
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
-      <!-- <div class="backdrop" data-modal> -->
-      <div class="modal-window">
-        <button class="modal-close-button">
-          <svg class="modal-close-icon" data-modal-close width="18" height="18">
+      <div class="modal__window">
+        <button class="modal__close-button">
+          <svg class="modal__close-icon" data-modal-close width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
         <form class="form">
-          <b class="form-title">Leave your information and we'll call you back</b>
+          <b class="form__title">Leave your information and we'll call you back</b>
 
-          <div class="form-field form-field--name">
-            <label for="name" class="form-label form-label--name">Name</label>
-            <input type="text" name="name" id="name" class="form-input form-input--name" />
-            <svg class="form-icon" width="18" height="18">
+          <div class="form__field form__field--name">
+            <label for="name" class="form__label form__label--name">Name</label>
+            <input type="text" name="name" id="name" class="form__input form__input--name" />
+            <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#person-black"></use>
             </svg>
           </div>
 
-          <div class="form-field form-field--tel">
-            <label for="tel" class="form-label form-label--tel">Telephone</label>
-            <input type="tel" name="tel" id="tel" class="form-input form-input--tel" />
-            <svg class="form-icon" width="18" height="18">
+          <div class="form__field form__field--tel">
+            <label for="tel" class="form__label form__label--tel">Telephone</label>
+            <input type="tel" name="tel" id="tel" class="form__input form__input--tel" />
+            <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#phone-black"></use>
             </svg>
           </div>
 
-          <div class="form-field form-field--email">
-            <label for="email" class="form-label form-label--email">E-mail</label>
-            <input type="email" name="email" id="email" class="form-input form-input--email" />
-            <svg class="form-icon" width="18" height="18">
+          <div class="form__field form__field--email">
+            <label for="email" class="form__label form__label--email">E-mail</label>
+            <input type="email" name="email" id="email" class="form__input form__input--email" />
+            <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#envelope-black"></use>
             </svg>
           </div>
 
-          <div class="form-field form-field--comments">
-            <label for="comments" class="form-label form-label--comments">Comments</label>
+          <div class="form__field form__field--comments">
+            <label for="comments" class="form__label form__label--comments">Comments</label>
             <textarea
               name="textarea"
               id="comments"
               rows="5"
               placeholder="Enter the text"
-              class="form-textarea form-textarea--comments"
+              class="form__textarea form__textarea--comments"
             ></textarea>
           </div>
 
-          <div class="form-field--agreement agreement">
-            <label class="agreement-label">
-              <input type="checkbox" name="agreement" class="agreement-checkbox--hidden" />
-              <svg class="agreement-checkbox--svg" width="15" height="15">
+          <div class="form__field--agreement agreement">
+            <label class="agreement__label">
+              <input type="checkbox" name="agreement" class="agreement__checkbox--hidden" />
+              <svg class="agreement__checkbox--svg" width="15" height="15">
                 <use href="./images/icons.svg#check-big"></use>
               </svg>
               I agree with the newsletter and accept the
-              <a href="#" class="agreement-link">Terms and Conditions</a>
+              <a href="#" class="agreement__link">Terms and Conditions</a>
             </label>
           </div>
-          <button type="submit" class="form-button--submit">Send</button>
+          <button type="submit" class="form__button">Send</button>
         </form>
       </div>
     </div>

@@ -1,4 +1,20 @@
-.modal-close-button {
+.modal__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: $color-6;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform $transition-variable;
+}
+
+.modal__close-button {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -13,11 +29,13 @@
   align-items: center;
 }
 
-.modal-close-icon {
+.modal__close-icon {
   fill: $color-2;
+
+  transition: fill $transition-variable;
 }
 
-.modal-close-button:hover .modal-close-icon {
+.modal__close-button:hover .modal__close-icon {
   fill: $color-3;
   cursor: pointer;
 }
@@ -27,7 +45,7 @@
   flex-direction: column;
 }
 
-.form-title {
+.form__title {
   text-align: center;
   color: $color-2;
   font-weight: 700;
@@ -36,7 +54,7 @@
   line-height: 1.15;
 }
 
-.form-field {
+.form__field {
   position: relative;
   margin-top: 10px;
 
@@ -44,12 +62,12 @@
   flex-direction: column;
 }
 
-.form-field--agreement {
+.form__field--agreement {
   margin-top: 20px;
 }
 
-.form-input,
-.form-textarea {
+.form__input,
+.form__textarea {
   margin-top: 4px;
   border-radius: 4px;
   color: $color-5;
@@ -57,12 +75,12 @@
   transition: border $transition-variable;
 }
 
-.form-input {
+.form__input {
   height: 40px;
   padding-left: 42px;
 }
 
-.form-textarea {
+.form__textarea {
   resize: none;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -70,7 +88,7 @@
   padding-right: 16px;
 }
 
-.form-textarea::placeholder {
+.form__textarea::placeholder {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
@@ -78,39 +96,39 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .form-input:hover, */
-/* .form-textarea:hover, */
-.form-input:focus,
-.form-textarea:focus {
+/* .form__input:hover, */
+/* .form__textarea:hover, */
+.form__input:focus,
+.form__textarea:focus {
   border: 1px solid $color-3;
   cursor: pointer;
 }
 
-.form-input:focus-visible,
-.form-textarea:focus-visible {
+.form__input:focus-visible,
+.form__textarea:focus-visible {
   outline: none;
 }
 
-.form-label {
+.form__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: $color-5;
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
 }
 
-.agreement-label {
+.agreement__label {
   display: inline-block;
   position: relative;
   padding-left: 38px;
 }
 
-.agreement-checkbox--hidden {
+.agreement__checkbox--hidden {
   appearance: none;
   position: absolute;
   width: 1px;
@@ -122,7 +140,7 @@
   overflow: hidden;
 }
 
-.agreement-checkbox--svg {
+.agreement__checkbox--svg {
   position: absolute;
   left: 14px;
   top: 5px;
@@ -133,18 +151,18 @@
   transition: border-color $transition-variable, background-color $transition-variable;
 }
 
-.agreement-checkbox--hidden:checked + .agreement-checkbox--svg {
+.agreement__checkbox--hidden:checked + .agreement__checkbox--svg {
   background-color: $color-3;
   border-color: $color-3;
 }
 
-.agreement-link {
+.agreement__link {
   color: $color-3;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 
-.form-button--submit {
+.form__button {
   margin-top: 5px;
   display: block;
   width: 200px;
@@ -166,7 +184,7 @@
   transition: background-color $transition-variable;
 }
 
-.form-button--submit:hover,
-.form-button--submit:focus {
+.form__button:hover,
+.form__button:focus {
   background-color: $color-1;
 }
