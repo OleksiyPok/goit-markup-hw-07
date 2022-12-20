@@ -5,17 +5,22 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
 
-.logo__link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+  &__link--header {
+    @include clickArea(24px);
+    margin-right: 93px;
+  }
 
-.logo__span--dark {
-  color: $color-2;
-}
+  &__link--footer {
+    display: block;
+    margin-bottom: 8px;
+  }
 
-.logo__span--light {
-  color: $color-6;
+  &__span--dark {
+    color: $color-2;
+  }
+
+  &__span--light {
+    color: $color-6;
+  }
 }

@@ -1,24 +1,24 @@
 .customers__list {
   display: flex;
-  margin-top: 50px;
   gap: 30px;
 }
 
 .customers__link {
-  display: flex;
   width: 168px;
   height: 90px;
   border-radius: 4px;
   border: $color-7 1px solid;
   fill: $color-7;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 
   transition: border-color $transition-variable, fill $transition-variable;
-}
 
-.customers__link:hover,
-.customers__link:focus {
-  border-color: $color-3;
-  fill: $color-3;
+  &:hover,
+  &:focus {
+    border-color: $color-3;
+    fill: $color-3;
+  }
 }

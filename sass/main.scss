@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/mixins';
 @import './base/normalize';
 @import './base/reset';
 @import './base/common';
@@ -11,15 +12,17 @@
 @import './layout/about';
 @import './layout/team';
 @import './layout/customers';
+@import './layout/portfolio';
 @import './layout/page-footer';
-
-@import './components/modal-form';
 
 @import './components/logo';
 @import './components/navigation';
 @import './components/contacts';
 @import './components/sociallink';
 @import './components/subscribe';
+@import './components/agreement';
+@import './components/form-submit';
+@import './components/modal-window';
 @import './components/portfolio-filters';
 @import './components/portfolio-projects';
 @import './components/portfolio-card';

@@ -2,35 +2,30 @@
   background-color: $color-4;
   padding-top: 60px;
   padding-bottom: 54px;
-}
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
 
-.footer__logo {
-  display: block;
-  margin-bottom: 8px;
-}
+  &__contacts {
+    font-style: inherit;
+  }
 
-.footer__contacts {
-  font-style: inherit;
-}
+  &__first-column {
+    margin-right: 70px;
+  }
 
-.footer__first-column {
-  margin-right: 70px;
-}
+  &__second-column {
+    margin-right: 93px;
+  }
 
-.footer__second-column {
-  margin-right: 93px;
-}
+  &__text {
+    color: $color-6;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
 
-.footer__text {
-  color: $color-6;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
 }

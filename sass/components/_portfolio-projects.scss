@@ -1,15 +1,16 @@
-.projects__list {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+.projects {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-.projects__item {
-  transition: box-shadow $transition-variable;
-}
+  &__item {
+    transition: box-shadow $transition-variable;
+  }
 
-.projects__item:hover,
-.projects__item:focus {
-  box-shadow: $portfolio-card-shadow;
+  &__item:hover,
+  &__item:focus {
+    box-shadow: $portfolio-card-shadow;
+  }
 }
